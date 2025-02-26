@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:mapbox_line_route/class/colors.dart';
-import 'package:mapbox_line_route/screens/mapbox_line_route.dart';
+import 'package:mapbox_line_route/core/class/colors.dart';
+import 'package:mapbox_line_route/core/screens/mapbox_line_route.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
@@ -18,6 +18,7 @@ class _SplashscreenState extends State<Splashscreen> {
     super.initState();
     initSplash(destination);
   }
+
   /// This here is a simulation as if we had a screen with the data, for example a list in which the
   /// data comes from an API and when touching a value in the list it does not redirect to our screen which will show the start and end path.
   List<LatLng> destination = [
